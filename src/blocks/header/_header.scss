@@ -1,0 +1,88 @@
+.header {
+  height: 75px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: block;
+  color: #454545;
+  background: url('/src/img/logo.png') no-repeat 0 50%;
+  text-transform: uppercase;
+  line-height: 75px;
+  padding-left: 84px;
+  background-size: auto 100%;
+  font-family: "Gilroy";
+  font-size: 27px;
+  font-weight: 800;
+  letter-spacing: -0.14px;
+  margin-left: 28px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: stretch;
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  &__item {
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+  }
+  &__link {
+    position: relative;
+    color: #191919;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Futura PT Demi";
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0.14px;
+    &:before {
+      content: '';
+      display: none;
+      position: absolute;
+      top: -13px;
+      left: 40%;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: #2d6b5f;
+    }
+    &:hover{
+      color: #2d6b5f;
+      &:before {
+        display: block;
+      }
+    }
+  }
+}
+
+// .main-menu__link:hover {
+//   color: #2d6b5f;
+//   &:before {
+//     content: '';
+//     display: none;
+//     position: absolute;
+//     top: 10.5px;
+//     left: -24px;
+//     width: 7px;
+//     height: 7px;
+//     border-radius: 50%;
+//     background-color: #2d6b5f;
+//   }
+//   &:hover{
+//     color: #2d6b5f;
+//     &:before {
+//       display: block;
+//     }
+//   }
+// }

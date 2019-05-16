@@ -1,0 +1,24 @@
+- BEMPUG.modifier = '_';
+
+include ../../components/wrapper/wrapper.pug
+
+mixin header(bem)
+  +wrapper
+    +b('header', bem, 'header')
+      +e('logo', {t: 'h1'}) Дэнтал Лэнд
+      +e('nav-menu', {t: 'nav'})
+        +e('main-menu', {t: 'ul'})
+          +e('item')
+            +e('link', {p:0, t: 'a'})(href='#') Главная
+          +e('item')
+            +e('link', {p:0, t: 'a'})(href='#') О нас
+          +e('item')
+            +e('link', {p:0, t: 'a'})(href='#') Услуги
+          +e('item')
+            +e('link', {p:0, t: 'a'})(href='#') Акции
+          +e('item')
+            +e('link', {p:0, t: 'a'})(href='#') Цены
+          +e('item')
+            +e('link', {p:0, t: 'a'})(href='#') Отзывы
+          +e('item')
+            +e('link', {p:0, t: 'a'})(href='#') Контакты
