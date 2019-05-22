@@ -46,15 +46,15 @@ a {
   text-decoration: none;
 }
 
-.a-i-c {
-  display: flex;
-  align-items: center;
- }
- 
- .wrapper {
+.wrapper {
   max-width: 1028px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.a-i-c {
+  display: flex;
+  align-items: center;
  }
  
  .arrow-btn {

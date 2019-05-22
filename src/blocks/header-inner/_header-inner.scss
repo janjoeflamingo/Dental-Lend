@@ -1,17 +1,21 @@
-.header-inner {
-  margin-top: 30px;
-  line-height: 0;
-  display: flex;
-  img {
+.main-slider {
+  max-width: 1028px;
+  margin: 0 auto;
+  padding: 0 15px;
+  &__top {
+    margin-top: 30px;
+    line-height: 0;
+    display: flex;
+  }
+  &__image {
     width: 100%;
     height: 100%;
   }
-}
-
-.footer-inner {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
   &__order {
     max-width: 330px;
     width: 100%;
@@ -24,31 +28,39 @@
     position: relative;
     top: -110px;
     left: 30px;
-    .bold {
-      font-family: 'Gilroy', sans-serif;
-      font-size: 24px;
-      font-weight: 800;
-      line-height: 30px;
-      text-transform: uppercase;
-      letter-spacing: 0.26px;
-      margin: 15px 0;
+    p + p {
       color: #2d2d2d;
+      font-family: "Gotham Pro", sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.19px;
     }
+  }
+  &__text_bold {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.26px;
+    margin: 15px 0;
+    color: #2d2d2d;
+  }
+  &__arrow-link {
+    position: absolute;
+    width: 78px;
+    height: 40px;
+    transition-duration: 0.5s;
     .arrow-btn {
       margin-top: 20px;
     }
-    .arrow-link {
-      position: absolute;
-      width: 78px;
-      height: 40px;
-      transition-duration: 0.5s;
-      &:hover {
-        transform: scale(1.5);
-        margin-left: 20px;
-      }
+    &:hover {
+      transform: scale(1.5);
+      margin-left: 20px;
     }
- }
-  .footer-inner__phone {
+  }
+  &__phone {
     font-family: 'Gotham Pro', sans-serif;
     font-size: 16px;
     line-height: 36px;
@@ -57,30 +69,20 @@
     color: #212121;
     min-width: 335px;
     margin-top: 15px;
-    &__item {
-      white-space: nowrap;
-    }
-    img {
-      margin-right: 20px;
-      padding-left: 29px;
-    }
     .pipeline {
       padding: 0 10px;
+    }
   }
- }
+  &__item {
+    position: relative;
+    margin-left: 100px;
+    white-space: nowrap;
+  }
+  &__item-img {
+    position: absolute;
+    left: -60px;
+  }
 }
-
-.footer-inner__order p + p {
-  color: #2d2d2d;
-  font-family: "Gotham Pro", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 0.19px;
-}
-
-
-
 
 
 // .side-btn {
