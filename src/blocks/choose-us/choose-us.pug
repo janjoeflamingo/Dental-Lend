@@ -1,0 +1,24 @@
+- BEMPUG.modifier = '_';
+
+mixin choose-us(bem)
+  +b('choose-us', bem)&attributes(attributes)
+    +e('img', {t: 'img'})(src='/src/assets/images/boy-happy-smile.png' alt='улыбка мальчика')
+    +e('title', {t: 'h2'}) Выбирая нас <br /> мы гарантируем
+    +e('block')
+      +e('block-item')
+        +e('block-img')(src='/src/assets/images/settings.png' alt='settings')
+        +e('discription', {t: 'h5'}) современные <br /> технологии
+        +e('text', {t: 'p'}) Современные технологии клиники позволяют проводить лечение без боли
+      +e('block-item')
+        +e('block-img')(src='/src/assets/images/cool.png' alt='cool')
+        +e('discription', {t: 'h5'}) качество <br /> лечения
+        +e('text', {t: 'p'}) Наши специалисты помогут в любой ситуации
+      +e('block-item')
+        +e('block-img')(src='/src/assets/images/up-arrow.png' alt='up-arrow')
+        +e('discription', {t: 'h5'}) полный спектр <br /> обслуживания
+        +e('text', {t: 'p'}) Наши клиники оказывают полный спектр стоматологических услуг
+      +e('block-item')
+        +e('block-img')(src='/src/assets/images/linked.png' alt='linked')
+        +e('discription', {t: 'h5'}) удобная <br /> оплата
+        +e('text', {t: 'p'}) Мы принимаем - наличные или банковские карты
+        +e('text')
