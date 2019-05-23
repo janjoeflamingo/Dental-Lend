@@ -1,0 +1,27 @@
+.arrow-btn {
+  display: block;
+  position: relative;
+  width: 76px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.arrow-btn::before,
+.arrow-btn::after {
+  content: '';
+  width: 10px;
+  height: 2px;
+  position: absolute;
+  background-color: #fff;
+  right: 0;
+}
+
+.arrow-btn::before {
+  transform-origin: right bottom;
+  transform: rotate(45deg);
+}
+
+.arrow-btn::after {
+  transform-origin: right top;
+  transform: rotate(-45deg);
+}

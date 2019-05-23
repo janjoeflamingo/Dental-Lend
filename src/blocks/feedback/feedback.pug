@@ -1,0 +1,12 @@
+- BEMPUG.modifier = '_';
+
+mixin feedback(bem)
+ +b('feedback', bem)&attributes(attributes)
+  +e('title', {t: 'h2'}) Остались вопросы?
+  +e('text', {t: 'p'}) Оставьте заявку ниже и мы с Вами свяжемся <br />
+        | в близжайшее время
+  +e('conteiner')
+    +e('input', {t: 'input'})(type='text' placeholder='Ввведите ваше имя')
+    +e('input', {t: 'input'})(type='text' placeholder='Ввведите номер телефона')
+    +e('input', {t: 'button', m: 'submit'}) Готово
+      +arrow-btn

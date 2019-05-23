@@ -1,0 +1,26 @@
+- BEMPUG.modifier = '_';
+
+mixin services(bem)
+  +b('services', bem)&attributes(attributes)
+    +e('bg-img')(src='/src/assets/images/boy-happy-smile2.png' alt='улыбка')
+    +e('title', {t: 'h2'}) Услуги
+    +e('block')
+      +e('item')
+        +e('img', {t: 'img'})(src='/src/assets/images/lotus.png' alt='лотус')
+        +e('discription', {t: 'h5'}) Терапевтическое лечение
+      +e('item')
+        +e('img', {t: 'img'})(src='/src/assets/images/surgery.png' alt='рука')
+        +e('discription', {t: 'h5'}) Хирургическое лечение
+      +e('item')
+        +e('img', {t: 'img'})(src='/src/assets/images/tooth.png' alt='зуб')
+        +e('discription', {t: 'h5'}) Ортопедическое лечение
+    +e('block')
+      +e('item')
+        +e('img', {t: 'img'})(src='/src/assets/images/tooth2.png' alt='зуб')
+        +e('discription', {t: 'h5'}) Эстетическая стоматология
+      +e('item')
+        +e('img', {t: 'img'})(src='/src/assets/images/teeth.png' alt='зубы')
+        +e('discription', {t: 'h5'}) Пародонтология
+      +e('item')
+        +e('img', {t: 'img'})(src='/src/assets/images/braces.png' alt='брекеты')
+        +e('discription', {t: 'h5'}) Ортодонтия

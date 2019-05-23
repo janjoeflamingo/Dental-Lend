@@ -1,12 +1,17 @@
 include ../node_modules/bempug/index
     - BEMPUG.modifier = '_';
 
-//- blocks imports
+//- components imports
 //- include ./components/wrapper/wrapper
+include ./components/arrow-btn/arrow-btn
+
+//- blocks imports
 include ./blocks/header/header
-include ./blocks/header-inner/header-inner
+include ./blocks/main-slider/main-slider
 include ./blocks/choose-us/choose-us
 include ./blocks/dentistry/dentistry
+include ./blocks/services/services
+include ./blocks/feedback/feedback
 
 doctype html
 html
@@ -14,6 +19,8 @@ html
   body
     //- +wrapper
     +header
-    +header-inner
+    +main-slider
     +choose-us
     +dentistry
+    +services
+    +feedback
