@@ -2,15 +2,57 @@
 
 mixin footer(bem)
   +b('footer', bem, 'footer')&attributes(attributes)
-    +e('title', {t: 'h2'}) sdfsdfsdfsdf
+    +e('title', {t: 'h2'}) Контакты
     +e('content')
       +e('conteiner')
         +e('block')
-          +e('block-img', {t: 'img'})(src='/src/assets/images/placeholder.png' alt='адрес')
+          +e('block-icon', {t: 'img'})(src='/src/assets/images/placeholder.png' alt='адрес')
           +e('text', {t: 'p'}) пр. Чекистов, 22
         +e('block')
-          +e('block-img', {t: 'img'})(src='/src/assets/images/placeholder.png' alt='адрес')
-          +e('text', {t: 'p'}) пр. Чекистов, 22
+          +e('block-icon', {t: 'img'})(src='/src/assets/images/phone.png' alt='телефон')
+          +e('text', {t: 'p'}) 8 (861) 273 61 42 <br /> 8 918 48 43 579
         +e('block')
-          +e('block-img', {t: 'img'})(src='/src/assets/images/placeholder.png' alt='адрес')
-          +e('text', {t: 'p'}) пр. Чекистов, 22
+          +e('block-icon', {t: 'img'})(src='/src/assets/images/message.png' alt='письмо')
+          +e('text', {t: 'p'}) dental_land@mail.ru
+        +e('button', {t: 'button', m: 'map'}) Показать на карте
+      +e('conteiner')
+        +e('block')
+          +e('block-icon', {t: 'img'})(src='/src/assets/images/placeholder.png' alt='адрес')
+          +e('text', {t: 'p'}) ул. Старокубанская, 32
+        +e('block')
+          +e('block-icon', {t: 'img'})(src='/src/assets/images/phone.png' alt='телефон')
+          +e('text', {t: 'p'}) 8 903 45 96 540
+        +e('block')
+          +e('block-icon', {t: 'img'})(src='/src/assets/images/message.png' alt='письмо')
+          +e('text', {t: 'p'}) dental_land@mail.ru
+        +e('button', {t: 'button', m: 'map.indent'}) Показать на карте
+      +e('social')
+        +e('social-link', {t: 'a'})(href='#')
+          +e('icon-vk', {t: 'span'})
+        +e('social-link', {t: 'a'})(href='#')
+          +e('icon-facebook', {t: 'span'})
+            +e('path1', {t: 'span'})
+            +e('path2', {t: 'span'})
+        +e('social-link', {t: 'a'})(href='#')
+          +e('icon-instagram', {t: 'span'})
+    +e('wrapper-menu')
+      +e('menu', {t: 'ul'})
+        +e('item', {t: 'li'})
+          +e('link', {t: 'a'}) Главная
+        +e('item', {t: 'li'})
+          +e('link', {t: 'a'}) о нас
+        +e('item', {t: 'li'})
+          +e('link', {t: 'a'}) услуги
+        +e('item', {t: 'li'})
+          +e('link', {t: 'a'}) акции
+        +e('item', {t: 'li'})
+          +e('link', {t: 'a'}) цена
+        +e('item', {t: 'li'})
+          +e('link', {t: 'a'}) отзывы
+        +e('item', {t: 'li'})
+          +e('link', {t: 'a'}) контакты
+      +e('menu-img', {t: 'img'})(src='/src/assets/images/mini-logo.png' alt='логотип')
+    +e('rights') Все права защищены. Полное или частичное копирование материалов Сайта в коммерческих целях<br />
+      | разрешено только с письменного разрешения владельца Сайта.<br />
+      | В случае обнаружения нарушений, виновные лица могут быть привлечены к ответственности<br />
+      | в соответствии с действующим законодательством Российской Федерации.
