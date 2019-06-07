@@ -28,16 +28,18 @@
   &__block {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     position: relative;
     margin-left: -10px;
   }
   &__block-item {
-    width: 17%;
+    // width: 17%;
+    max-width: 195px;
     &:not(:first-child) {
-      margin-left: 30px;
+      margin-left: 0;
     }
     &:first-child {
-      width: 19%;
+     max-width: 195px;
     }
   }
   &__block-img {
