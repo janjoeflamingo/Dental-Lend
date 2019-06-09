@@ -3,6 +3,7 @@
 mixin footer(bem)
   +b('footer', bem, 'footer')&attributes(attributes)
     +e('title', {t: 'h2'}) Контакты
+      +e('title-img', {t: 'img'})(src='/src/assets/images/mini-logo.png' alt='mini-logo')
     +e('content')
       +e('conteiner')
         +e('block')

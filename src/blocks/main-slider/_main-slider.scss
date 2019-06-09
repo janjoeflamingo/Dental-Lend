@@ -82,6 +82,29 @@
     position: absolute;
     left: -60px;
   }
+
+  @media (max-width: 320px) {
+    &__image {
+      background: url('/src/assets/images/main-slider-image1.png') no-repeat;
+      margin-top: -12px;
+      overflow: hidden;
+    }
+    &__phone {
+      position: relative;
+      left: -40px;
+      font-size: 14px;
+      font-weight: 800;
+      line-height: 30.51px;
+      letter-spacing: -0.08px;
+      margin-bottom: 65px;
+    }
+    &__item-img {
+      top: -61.5px;
+    }
+    &__text {
+      margin-left: -20px;
+    }
+  }
 }
 
 

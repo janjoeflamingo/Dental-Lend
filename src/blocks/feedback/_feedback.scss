@@ -8,7 +8,7 @@
   background-blend-mode: multiply;
   background-color: rgba(124, 210, 193, 1);
   padding-left: 100px;
-  margin-top: 140px;
+  margin-top: 90px;
   &__title {
     color: #2d2d2d;
     font-family: "Gilroy", sans-serif;
@@ -62,5 +62,30 @@
   }
   .arrow-btn {
     margin-right: 24px;
+  }
+
+  @media (max-width: 320px) {
+    padding: 0 15px;
+    &__title {
+      font-size: 20px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.11px;
+      padding-top: 40px;
+    }
+    &__text {
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 24px;
+      letter-spacing: -0.8px;
+      br {
+        display: none;
+      }
+    }
+    &__input {
+      &:first-child {
+        margin-bottom: 20px;
+      }
+    }
   }
 }
