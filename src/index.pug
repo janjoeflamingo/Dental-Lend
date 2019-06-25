@@ -13,18 +13,16 @@ include ./blocks/dentistry/dentistry
 include ./blocks/services/services
 include ./blocks/feedback/feedback
 include ./blocks/footer/footer
-
 doctype html
 html
   include ./blocks/head/head
   body
     //- +wrapper
     +header
-    +swiper-container
+    +main-slider
     +choose-us
     +dentistry
     +services
     +feedback
     +footer
-    script(src="./components/slider/swiper.min.js")
     script(src="index.js")

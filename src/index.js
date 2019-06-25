@@ -1,8 +1,6 @@
 import style from "./assets/styles/main.scss";
-import Swiper from "./components/slider/swiper.min.js";
-import swiper from "./components/slider/swiper.js";
+import MainSlider from "./components/slider/MainSlider.js";
 //*****************************************************************
-
 
 //               remove comment to support pwa
 
