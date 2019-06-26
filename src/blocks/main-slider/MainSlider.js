@@ -1,19 +1,26 @@
 import Swiper from 'swiper';
 
-var MainSlider = new Swiper('.main-slider', {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  loop: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
+class MainSlider {
+  constructor() {
+    this.init();
+  }
 
+  init() {
+    new Swiper('.swiper-conteiner', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  }
+}
 export default MainSlider;
 
 

@@ -1,5 +1,5 @@
 import style from "./assets/styles/main.scss";
-import MainSlider from "./components/slider/MainSlider.js";
+import MainSlider from "./blocks/main-slider/MainSlider.js";
 //*****************************************************************
 
 //               remove comment to support pwa
@@ -13,3 +13,5 @@ import MainSlider from "./components/slider/MainSlider.js";
 
 
 //*****************************************************************
+
+new MainSlider();
