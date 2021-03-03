@@ -57,6 +57,6 @@
   "dependencies": {
     "node-sass-glob-importer": "^5.3.1",
     "normalize-scss": "7.0.1",
-    "pug": "^2.0.3"
+    "pug": "^3.0.1"
   }
 }
